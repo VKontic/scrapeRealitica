@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require('express');
 const csv = require('csv-parser');
 const app = express();
