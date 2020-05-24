@@ -6,7 +6,7 @@ const cron = require("node-cron");
 
 const { scrapRealiticaFlats, scrapSingleFlat } = require('./scraper');
 
-cron.schedule("* * /30 * * * *", function() {
+cron.schedule("*/30 * * * *", function() {
     // start 30 minutes after server starts, and then
     // update csv file every 30 min
     console.log("Cron job started!");
